@@ -1,0 +1,17 @@
+{
+  "name": "MSDoc Language Replacer",
+  "description": "Replace language in Microsoft documentation pages.",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["./background.js"]
+  },
+  "options_page": "./options.html",
+  "browser_action":  {
+    "default_popup": "./popup.html"
+  },
+  "permissions" : [
+    "tabs",
+    "https://docs.microsoft.com/*"
+  ]
+}
